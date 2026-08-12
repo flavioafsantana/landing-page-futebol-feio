@@ -1,29 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Futebol Feio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Futebol Feio</title>
+
+<!-- Fontes: Archivo Black para títulos (peso forte, esportivo) + Inter para o texto -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- CSS separado: precisa estar na mesma pasta que este arquivo HTML -->
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <nav class="nav">
-            <div class="nav-content">
-                <div class="nav-logo">
-                    <img src="logo.jpg" alt="Logo do site">
-                    <h2 class="nav-title">Futebol Feio</h2>
-                </div>
-                <a  class="nav-link" href="#">Entrar no Grupo</a>
-            </div>
-        </nav>
-    </header>
-    <main>
 
-    </main>
-    <footer></footer>
+  <!-- NAV -->
+  <header class="nav">
+    <div class="container">
+      <div class="nav-logo">
+        <img src="logo.png" alt="Escudo Futebol Feio">
+        <span>FUTEBOL FEIO</span>
+      </div>
+      <a class="btn" href="https://chat.whatsapp.com/SEU-LINK-AQUI" target="_blank" rel="noopener">
+        Entrar no grupo
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img class="hero-crest" src="logo.png" alt="Escudo Futebol Feio">
+    <h1>Bola rola<br><span class="accent">toda quarta às 20h30.</span></h1>
+    <p>Um grupo de amigos, uma bola e muita zoeira. Entra no grupo, combina com a galera e vem jogar com a gente — não precisa ser bom, só precisa aparecer.</p>
+    <a class="btn btn-lg" href="https://chat.whatsapp.com/SEU-LINK-AQUI" target="_blank" rel="noopener">
+      Entrar no grupo 👉
+    </a>
+  </section>
+
+  <!-- HISTÓRIA -->
+  <section class="historia">
+    <div class="container">
+      <div class="historia-img">
+        <!-- troque por: <img src="foto-do-time.jpg" alt="Time Futebol Feio"> -->
+        foto do time / print do grupo
+      </div>
+      <div>
+        <p class="eyebrow">Nossa história</p>
+        <h2>De uma simples brincadeira a tradição semanal</h2>
+        <p>Começou pequeno, só um grupo de amigos chutando bola numa quarta. Hoje já é tradição: toda semana tem gente nova, gol impossível e aquela zoeira de sempre. Se você curte bola e quer fazer parte, é só entrar no grupo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VÍDEOS -->
+  <section class="videos">
+    <div class="container">
+      <div class="videos-head">
+        <p class="eyebrow" style="text-align:center;">Melhores momentos</p>
+        <h2>Direto do nosso canal</h2>
+        <p>Gols, furadas e resenha — confere alguns dos nossos vídeos.</p>
+      </div>
+      <div class="video-grid">
+
+        <div class="video-card">
+          <div class="video-embed">
+            <!-- Troque VIDEO_ID_1 pelo ID real do vídeo no YouTube -->
+            <iframe src="https://www.youtube.com/embed/H0HsaWTIxw4?si=zOJkt0AWr0On7dZC" title="Vídeo 1" allowfullscreen></iframe>
+          </div>
+          <div class="cap">Melhores momentos — 05/08/26</div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/NQ3LCFHw-Hc?si=wNn_NPNVxCjWpMcb" title="Vídeo 2" allowfullscreen></iframe>
+          </div>
+          <div class="cap">Melhores momentos — 29/07/26</div>
+        </div>
+
+        <div class="video-card">
+          <div class="video-embed">
+            <iframe src="https://www.youtube.com/embed/bDi4m2lMRFA?si=H__9LzYiAHSRXduD" title="Vídeo 3" allowfullscreen></iframe>
+          </div>
+          <div class="cap">Melhores momentos — 15/07/26</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final">
+    <h2>Bora jogar?</h2>
+    <a class="btn btn-lg" href="https://chat.whatsapp.com/SEU-LINK-AQUI" target="_blank" rel="noopener">
+      Entrar no grupo 👉
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo">
+        <img src="logo.png" alt="Escudo Futebol Feio">
+        <span>Futebol Feio © 2026</span>
+      </div>
+      <div class="socials">
+        <a href="#" target="_blank" rel="noopener" aria-label="Instagram">IG</a>
+        <a href="#" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+        <a href="#" target="_blank" rel="noopener" aria-label="YouTube">YT</a>
+      </div>
+    </div>
+  </footer>
+
 </body>
-
 </html>
